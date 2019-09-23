@@ -1,0 +1,26 @@
+Corrected with server enabled:
+
+------------------------------------------------------------------------
+
+Attached is a general scaffolding of the Python Web Service for the score board with all 4 methods.
+
+It includes the Timer function which is a global variable
+
+------------------------------------------------------------------------
+
+Per our conversation, I think this would be the approach I would take:
+
+1. Create 4 web services on the PI
+  GetTime() – retrieves the current timer
+  GetStatus() – retrieves whether the timer is running or stopped
+  SetStartTimer() – starts the timer and continually writes to MySQL using a database connection pool (if GetStatus() returns “stopped”)
+  SetStopTimer() – stops the timer and update the database? (if GetStatus() returns “running”)
+  
+2. Create a web page in PHP which:
+  Has a button which calls SetStartTimer()
+  Has a button which calls SetStopTimer()
+  Has a built in timer to poll ever second the GetTime() web method which shows the time on the browser
+
+3. Examples:
+Python web services: https://codeburst.io/this-is-how-easy-it-is-to-create-a-rest-api-8a25122ab1f3
+PHP calling Python web serviceS: https://torbjornzetterlund.com/basic-python-restful-server-bridging-php-python/
