@@ -1,0 +1,33 @@
+The webpage is to be run on Linux using Apache Webserver, PHP, and MySQL database.
+
+Install Raspbian on the Raspberry Pi (see software design document for more details). Connect the Rasberry Pi to the internet and to a monitor.
+
+Setting up the webserver:
+1. Install Apache webserver
+2. Install MySQL
+3. Install PHP myadmin.
+4. Log into phpmyadmin and change the password to the one listed in the software design document. Setup up the database tables in the Software design document. You can import the tables using the OURugby.sql file.
+5. Install python mysql package
+6. Install Arduino IDE from the Arduino website(https://www.arduino.cc/en/Main/Software - Download the installer for 32-bit Linux ARM) and the Teensy support (follow instruction on the Teensy's website, https://www.pjrc.com/teensy/td_download.html - Use installer for Linux ARM)
+7. Load the Teensy with the ScoreBoardTeensy program (see Software Design document for instructions).
+7. Setup up static IP address on the Raspberry Pi (see the other commands document)
+8. Copy all of the files in the software archive into the /var/www/html folder. One way is to use a USB Flash drive. Another way is to use SSH (use the terminal on Mac OS, use PuTTY or WinSCP on Windows). 
+9. Place a copy of PiRun.sh and RunScoreboard.py on the desktop (likely /home/pi/Desktop/)
+10. See the other commands folder to setup the python script to run at reboot.
+11. Plug the Teensy into the Raspberry Pi and restart the Rasbperry Pi.
+12. Test the webpage by going to the IP address.
+
+To edit the code for the Teensy, use the Arduino IDE.
+To edit the python code, install python and use an IDE or the python command line to run code.
+To edit the webpage code, use a text editor. Then load the webpage to test.
+
+To run the webpage on Windows, install XAMPP.
+
+See the software user manual document for default passwords.
+
+Helpful Links with more information on how to install the programs:
+https://www.raspberrypi.org/documentation/remote-access/web-server/apache.md
+https://howtoraspberrypi.com/how-to-install-web-server-raspberry-pi-lamp/
+https://www.raspberrypi.org/documentation/linux/software/python.md
+
+It might be useful to configure Remote Desktop Access on the Raspberry Pi: see https://www.raspberrypi.org/documentation/remote-access/

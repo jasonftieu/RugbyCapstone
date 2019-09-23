@@ -1,0 +1,203 @@
+@font-face {font-family: Calibri; src:"calibri.tff"}
+
+.button {
+    background-color: rgb(208,206,206);
+    border: solid 5px;
+    border-radius:15px;
+    border-color:white;
+    width : 55px;
+    color: rgb(153,0,0);
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Calibri;
+    font-weight: 900;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 -1px 1px rgba(0,0,0,0.5), 0 1px 1px #666, inset 0 -1px 1px rgba(0,0,0,0.5), inset 0 -1px 1px rgba(255,255,255,0.8);
+}
+
+.border {
+    width: 900px;
+    height: 500px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(65, 113, 156);
+    border-radius: 5px;
+}
+
+.logo {
+    position: relative;
+    z-index: -1;
+    width: 55%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.box{
+    width: 90%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+}
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.home-name{
+    position: absolute;
+    top: 5%;
+    bottom: 50%;
+    left: 6%;
+    font-size: 50px;
+    font-family: Calibri;
+    font-weight: 900;
+    color: white;
+}
+.home-score {
+    position: absolute;
+    top: 5%;
+    bottom: 50%;
+    left: 38%;
+    font-size: 50px;
+    font-family: Calibri;
+    font-weight: 900;
+    color: white;
+}
+
+.away-name {
+    position: absolute;
+    top: 5%;
+    bottom: 50%;
+    right: 6%;
+    font-family: Calibri;
+    font-size: 50px;
+    font-weight: 900;
+    color: rgb(153,0,0);
+}
+
+.away-score {
+    position: absolute;
+    top: 5%;
+    bottom: 50%;
+    right: 38%;
+    font-family: Calibri;
+    font-size: 50px;
+    font-weight: 900;
+    color: rgb(153,0,0);
+}
+
+.plus1-home{
+    position: absolute;
+    left: 40px;
+}
+
+.minus1-home{
+    position: absolute;
+    left: 125px;
+}
+
+.plus2-home{
+    position: absolute;
+    top: 80px;
+    left: 40px;
+}
+
+.plus3-home{
+    position: absolute;
+    top: 160px;
+    left: 40px;
+}
+
+.plus5-home{
+    position: absolute;
+    top: 240px;
+    left: 40px;
+}
+
+.plus1-away{
+    position: absolute;
+    right: 40px;
+}
+
+.minus1-away{
+    position: absolute;
+    right: 125px;
+}
+
+.plus2-away{
+    position: absolute;
+    top: 80px;
+    right: 40px;
+}
+
+.plus3-away{
+    position: absolute;
+    top: 160px;
+    right: 40px;
+}
+
+.plus5-away{
+    position: absolute;
+    top: 240px;
+    right: 40px;
+}
+
+.clocktime{
+    position: relative;
+    text-align:center;
+    margin: 0px 0px 0px 0px;
+    display: inline-block;
+    width:300px;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.play-pause{
+    position: absolute;
+    width: 165px;
+    top: 200px;
+    left:250px;
+}
+
+.restart{
+    position: absolute;
+    width: 165px;
+    top: 200px;
+    right:250px;
+}
+
+.half1{
+    position: absolute;
+    width: 165px;
+    top: 100px;
+    left:150px;
+}
+
+.half2{
+    position: absolute;
+    width: 165px;
+    top: 100px;
+    left: 365px;
+}
+
+.halfOT{
+    position: absolute;
+    width: 165px;
+    top: 100px;
+    right:150px;
+}
+
+.new{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    font-size: 10px;
+}
